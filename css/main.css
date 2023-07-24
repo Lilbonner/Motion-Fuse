@@ -2,9 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 body {
-    color: #000;
+    color: #ffffff;
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
+    width: 100%;
 }
 
 .container {
@@ -21,7 +22,7 @@ body {
 .btn {
     display: inline-block;
     padding: 7px 22px;
-    background-color: #070707;
+    background-color: #ffffff;
     border-radius: 30px;
 
     font-size: 18px;
@@ -31,13 +32,13 @@ body {
 }
 
 .btn:hover, .btn:focus {
-    background-color: #323232;
+    background-color: #02152A;
 }
 
 .btn:active {
     position: relative;
     top: 1px;
-    background-color: #000000;
+    background-color: #02152A;
 }
 
 
@@ -45,15 +46,54 @@ body {
 
 .header {
     padding-top: 46px;
-    background-color: #F1F1F1;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-size: 300% 300%;
+        background-image: linear-gradient(-176deg, #02152A 10%, #02152A 25%, #02152A 51%, #9900fe 85%);
+        -webkit-animation: AnimateBG 10s ease infinite;
+                animation: AnimateBG 10s ease infinite;
+      }
+      
+      @-webkit-keyframes AnimateBG {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+      
+      @keyframes AnimateBG {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      
 }
 
 .header-nav {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    margin-bottom: 300px;
+    margin-top: 7px;
+}
 
-    margin-bottom: 76px;
+.logo-img {
+    display: flex;
+    padding-top: 10px;
+    width: 8%;
 }
 
 .logo {
@@ -63,7 +103,7 @@ body {
     font-weight: 700;
     font-size: 32px;
     line-height: 1;
-    color: #000;
+    color: #fffcfc;
 }
 
 .logo::after {
@@ -93,39 +133,77 @@ body {
 }
 
 .nav-link {
-    color: #000;
+    color: #ffffff;
 }
 
 .nav-link.active {
-    color: #606060;
+    color: #ffffff;
 }
 
 /* Header content */
 
 .header-row {
-    display: flex;justify-content: space-between;
+    display: flex;
+    justify-content: center;
     column-gap: 30px;
 }
 
 .header-content {
-    margin-top: 124px;
-    max-width: 500px;
+    padding-left: 10px;
+    margin-top: 114px;
+}
+.header-content-2 {
+    display: flex;
+    text-align: center;
+    font-size: 1.2vw;
+    padding-left: 45px;
 }
 
 .header-heading {
-    margin-bottom: 20px;
+    margin-bottom: 90px;
     font-weight: 600;
-    font-size: 44px;
-}
-
-.header-content p {
-    line-height: 2;
+    font-size: 60px;
+    letter-spacing: 7px;
 }
 
 /* Service */
 
 .services {
     padding: 90px 0;
+    width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-size: 300% 300%;
+        background-image: linear-gradient(356deg, #02152A 10%, #02152A 25%, #02152A 51%, #9900fe 85%);
+        -webkit-animation: AnimateBG 10s ease infinite;
+                animation: AnimateBG 10s ease infinite;
+      }
+      
+      @-webkit-keyframes AnimateBG {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+      
+      @keyframes AnimateBG {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      
 }
 
 .services-row {
@@ -159,7 +237,7 @@ body {
 
 .portfolio {
     padding: 90px 0;
-    background-color: #F1F1F1;
+    background-color: #02152A;
 }
 
 .portfolio-title {
@@ -184,8 +262,9 @@ body {
 }
 
 .project-title a {
-    color: #000;
-    text-decoration: underline;
+    color: #3a368e;
+    text-decoration: none;
+    font-size: 2vw;
 }
 
 /* Footer */
