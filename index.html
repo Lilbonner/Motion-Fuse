@@ -16,7 +16,7 @@
     />
   </head>
   <body>
-    <header class="header">
+    <header id="header" class="header">
       <div class="container">
         <div class="header-nav">
           <a href="#!" class="logo-img"
@@ -26,13 +26,14 @@
           <nav id="nav" class="nav">
             <ul class="nav-list">
               <li class="nav-item">
-                <a href="#!" class="nav-link active">Home</a>
+                <a href="#header" class="nav-link active">Home</a>
               </li>
-              <li class="nav-item"><a href="#!" class="nav-link">Works</a></li>
               <li class="nav-item">
-                <a href="#!" class="nav-link">Services</a>
+                <a href="#video" class="nav-link">Expample</a>
               </li>
-              <li class="nav-item"><a href="#!" class="nav-link">About</a></li>
+              <li class="nav-item">
+                <a href="#Services" class="nav-link">Services</a>
+              </li>
               <li class="nav-item">
                 <a href="#!" class="nav-link">Contact</a>
               </li>
@@ -46,12 +47,14 @@
             </button>
           </nav>
         </div>
-        <div class="header-row">
+        <div id="header" class="header-row">
           <div class="header-content" data-aos="fade-down">
             <h1 class="header-heading">MOTION FUSE</h1>
-            <h2 class="header-content-2" data-aos="fade-down">TRANSFORMING MOMENTS INTO MASTERPIECES</h2>
-            </div>
-            
+            <h2 class="header-content-2" data-aos="fade-up">
+              TRANSFORMING MOMENTS INTO MASTERPIECES
+            </h2>
+          </div>
+
           <div class="header-img" data-aos="fade-up">
             <picture>
               <source
@@ -64,10 +67,36 @@
         </div>
       </div>
     </header>
-
+    <section class="portfolio">
+      <div id="video" class="container">
+        <div class="project" data-aos="flip-up">
+          <div class="project-content">
+            <h2 class="project-title"><span>VIDEO-EDITING SERVICES</span></h2>
+            <p class="project-text">
+              We can help you tell the store you want. <br>The Way you want
+            </p>
+            <p class="project-text">
+              Our team specializes on color-grading,<br> sound-fixing and
+              <br>video-editing in generally
+            </p>
+          </div>
+          <iframe
+            width="800"
+            height="355"
+            src="https://www.youtube.com/embed/_8PU_BvXNb0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          
+          <!-- <h3 class="project-title">Motion Fuse services example ad</h3> -->
+        </div>
+      </div>
+    </section>
     <section class="services">
       <div class="container">
-        <div class="services-row">
+        <div id="Services" class="services-row">
           <div class="service-card" data-aos="fade-down">
             <img
               class="service-card-img"
@@ -76,8 +105,9 @@
             />
             <h3 class="service-card-title">video-editing</h3>
             <p>
-              Our design is translated into comprehensive digital environments
-              built on latest development standards.
+              Our agents can help you improve your video, will fix to shaky
+              video, will make video more dynamic or more humble, will do
+              everything <br />to help your story work the way you want!
             </p>
           </div>
 
@@ -89,8 +119,10 @@
             />
             <h3 class="service-card-title">color-grading</h3>
             <p>
-              Our design is translated into comprehensive digital environments
-              built on latest development standards.
+              Do you want to make your audience feel some specific emotions?
+              like awareness, happiness, depression or some specific vibes?
+              Color-grading that is the tool you are looking for. Which our
+              agents mastered, will make your audience feel!
             </p>
           </div>
 
@@ -102,85 +134,27 @@
             />
             <h3 class="service-card-title">Sound fixing/design</h3>
             <p>
-              Our design is translated into comprehensive digital environments
-              built on latest development standards.
+              Sometimes sound is really messed up, there lots of reasons
+              whether, bad microphone, but what to do and how to fix it? don't
+              worry, our agents can fix that, because of huge experience and
+              modern technology there is almost no such problem at all!
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="portfolio">
-      <div class="container">
-        <div class="portfolio-title">
-          <h2 class="title-1">Portfolio</h2>
-        </div>
-
-        <div class="project" data-aos="flip-up">
-          <img
-            src="./img/portfolio/01.jpg"
-            alt="Online fashion store"
-            class="project-img"
-          />
-          <h3 class="project-title">
-            <a href="#!">Online fashion store - Homepage</a>
-          </h3>
-        </div>
-
-        <div class="project" data-aos="flip-up">
-          <img
-            src="./img/portfolio/02.jpg"
-            alt="Reebok Store"
-            class="project-img"
-          />
-          <h3 class="project-title"><a href="#!">Reebok Store - Concept</a></h3>
-        </div>
-
-        <div class="project" data-aos="flip-up">
-          <img
-            src="./img/portfolio/03.jpg"
-            alt="Braun Landing Page"
-            class="project-img"
-          />
-          <h3 class="project-title">
-            <a href="#!">Braun Landing Page - Concept</a>
-          </h3>
-        </div>
-      </div>
-    </section>
-
-    <!-- <footer class="contacts">
-      <div class="container">
-        <div class="contacts-title">
-          <h2 class="title-1">Contacts</h2>
-        </div>
-        <div class="contacts-content" data-aos="fade-down">
-          <p>
-            Want to know more or just chat?<br />
-            You are welcome!
-          </p>
-        </div>
-        <div class="contacts-button" data-aos="fade-down">
-          <a href="#!" class="btn">Send message</a>
-        </div>
-        <div class="contacts-social" data-aos="zoom-in">
-          <a href="#!"
-            ><img src="./img/socials/LinkedIn.svg" alt="LinkedIn"
-          /></a>
-          <a href="#!"
-            ><img src="./img/socials/Instargam.svg" alt="Instargam"
-          /></a>
-          <a href="#!"><img src="./img/socials/Behance.svg" alt="Behance" /></a>
-          <a href="#!"><img src="./img/socials/Dribble.svg" alt="Dribble" /></a>
-        </div>
-        <div class="contacts-footer" data-aos="fade-up">
-          <p>
-            Like me on<br />
-            LinkedIn, Instagram, Behance, Dribble
-          </p>
-        </div>
-      </div>
-    </footer> -->
+    <footer>
+      <div class="footer-content">
+        <p class="contact-us" data-aos="fade-down">Contact us:</p>
+        <img src="/img/footer/telegram1.png" alt="" data-aos="fade-down">
+        <p data-aos="fade-down">@motion_fuse</p>
+        <img src="/img/footer/icons8-phone-50.png" alt="" data-aos="fade-down">
+        <p data-aos="fade-down">+1 516 940 8439</p>
+        <img src="/img/footer/mail-48.png" alt="" data-aos="fade-down">
+        <p data-aos="fade-down">muktarovc@gmail.com</p>
+    </div>
+    </footer>
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
