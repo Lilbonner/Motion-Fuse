@@ -64,11 +64,13 @@
 	.header-img {
 		text-align: center;
 	}
+
+	
 }
 
 @media (max-width: 700px) {
 	.header-heading {
-		font-size: 44px;
+		font-size: 30px;
 		display: flex;
 		justify-content: center;
 		line-height: 1.3;
@@ -79,8 +81,8 @@
 	
 	}
 
-	.header-heading span {
-		font-size: 28px;
+	.header-content-2 {
+		font-size: 10px;
 	}
 
 	.services {
@@ -93,6 +95,18 @@
 
 	.portfolio-title {
 		margin-bottom: 50px;
+	}
+
+	.project-title {
+		font-size: 3vw;
+	}
+
+	.project-content p{
+		font-size: 7px;
+	}
+
+	.project-text p {
+		font-size: 9px;
 	}
 
 	.project-img {
@@ -123,4 +137,20 @@
 		column-gap: 50px;
 		margin-bottom: 20px;
 	}
+	.video-ad {
+		height: 50%;
+		padding-top: 50px;
+	}
+}
+@media (max-width: 500px) {
+.video-ad {
+	width: 50%;
+	height: 50%;
+}
+
+.footer-content p {
+    font-size: 2vw;
+    padding-top: 6vw;
+    padding-left: 1vw;
+  }
 }
