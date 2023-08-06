@@ -195,6 +195,10 @@ body {
 }
 
 /* Portfolio */
+.video-ad {
+  width: 100%;
+  padding-top: 40px;
+}
 
 .portfolio {
     padding-left: 90px;
@@ -246,7 +250,7 @@ body {
 }
 
 .project-content p{
-    font-size: 1.3vw;
+    font-size: 14px;
     padding-top: 20px;
   }
 
@@ -287,7 +291,7 @@ body {
   }
 
   .footer-content p {
-    font-size: 1.3vw;
+    font-size: 1.5vw;
     padding-top: 6vw;
     padding-left: 1vw;
   }
